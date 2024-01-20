@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background: red;
+    padding: 20px 10px 0;
+    margin-left: 50%;
+}
+.btnarea{
+    top: 100px;
+    left: 60px;
+    text-align: center;
+}
+
+.menupart{
+    background: #f1f1f1;
+}
+.alignment{
+    width: 80%;
+    margin: 0 auto;
+}
+.menuConmain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+     gap: 15px;
+}
+.menu li  {
+    position: relative;
+}
+.dropMemu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    text-align: center;
+    display: none;
+}
+.menu li a{
+    display: block;
+    padding: 15px 0;
+}
+.collapse{
+    padding: 8px 15px;
+    margin: 15px 0;
+    border: 1px solid #999;
+    border-radius: 3px;
+    display: none;    
+}
+.sidebarArea{
+    position: fixed;
+    top: 0;
+   left: 0;
+   display: flex;
+}
+
+
+.sidebar {
+    height: 100vh;
+    width: 300px;
+    background: green;
+   margin-left: -300px;
+   transition: 0.5s;
+}
+ .sidebarbtn {
+    height: 50px;
+    width: 50px;
+    background: red;
+    cursor: pointer;
+} 
+.ml0{
+    margin-left: 0;
+}
+.sidebarCon li a{
+    color: #f1f1f1;
+
+}
+.sidebarCon{
+    font-size:40px;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 60px 30px;
+    gap: 20px;
+    cursor: pointer;
+  
+    
+}
+.sidedrop{
+  
+
+    top: 100%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+@media (max-width:768px){
+    .menu{
+        display: none;
+        position: absolute;  
+        top: 100%;
+        left: 0;
+        background: #f1f1f1;
+        padding: 0 10px;
+        width: 100%;
+    }
+    .dropMemu{
+        position: unset;
+        text-align: left;
+    }
+    .menuConmain{
+        position: relative;
+    }
+    .collapse{
+        display: block;
+    }
+}
+
+    
